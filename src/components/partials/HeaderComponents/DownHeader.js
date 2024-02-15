@@ -6,10 +6,10 @@ const DownHeader = () => {
     const [search, setsearch] = useState('')
     const navigate = useNavigate();
     const cartpage = () => {
-        window.location.assign('/user/cart/data/')
+        navigate('/user/cart/data/')
     }
     const wishlistpage = () => {
-        window.location.assign('/user/wishlist/data/')
+        navigate('/user/wishlist/data/')
     }
     const onHandelDataChange = (event) => {
         setsearch(event.target.value);
